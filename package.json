@@ -1,11 +1,8 @@
 {
   "name": "loopback-typeorm",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A component to provide TypeORM in Loopback 4",
-  "keywords": [
-    "loopback-application",
-    "loopback"
-  ],
+  "keywords": ["loopback-application", "loopback"],
   "main": "index.js",
   "engines": {
     "node": ">=8"
@@ -14,38 +11,33 @@
     "build": "tsc --outDir dist --target es2017",
     "build:watch": "tsc --outDir dist --target es2017 --watch",
     "clean": "rm -rf dist",
-        "lint": "npm run prettier:check && npm run tslint",
+    "lint": "npm run prettier:check && npm run tslint",
     "lint:fix": "npm run prettier:fix && npm run tslint:fix",
-            "prettier:cli": "prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:cli": "prettier \"**/*.ts\" \"**/*.js\"",
     "prettier:check": "npm run prettier:cli -- -l",
     "prettier:fix": "npm run prettier:cli -- --write",
-            "tslint": "tslint",
+    "tslint": "tslint",
     "tslint:fix": "npm run tslint -- --fix",
-        "pretest": "npm run clean && npm run build",
-            "posttest": "npm run lint",
-            "start": "npm run build && node .",
-        "prepare": "npm run build"
+    "pretest": "npm run clean && npm run build",
+    "posttest": "npm run lint",
+    "start": "npm run build && node .",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git"
   },
   "author": "",
   "license": "MIT",
-  "files": [
-    "README.md",
-    "index.js",
-    "index.d.ts",
-    "dist"
-  ],
+  "files": ["README.md", "index.js", "index.d.ts", "dist"],
   "dependencies": {
     "@loopback/context": "^4.0.0-alpha.18",
-        "@loopback/core": "^4.0.0-alpha.20",
+    "@loopback/core": "^4.0.0-alpha.20",
     "@loopback/rest": "^4.0.0-alpha.7"
-      },
+  },
   "devDependencies": {
-        "prettier": "^1.7.3",
-            "tslint": "^5.7.0",
-        "@loopback/testlab": "^4.0.0-alpha.13",
-        "typescript": "^2.5.3"
+    "prettier": "^1.7.3",
+    "tslint": "^5.7.0",
+    "@loopback/testlab": "^4.0.0-alpha.13",
+    "typescript": "^2.5.3"
   }
 }
