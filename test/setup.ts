@@ -262,15 +262,14 @@ function run(cmd: string[]) {
 
 // clean up any previous containers
 function dockerCleanup(next: Function) {
-  // if (containerToDelete) {
-  //   console.log('cleaning up container: %s', containerToDelete.id);
-  //   containerToDelete.remove({force: true}, function(err) {
-  //     next(err);
-  //   });
-  // } else {
-  //   setImmediate(next);
-  // }
-  setImmediate(next);
+  if (containerToDelete) {
+    console.log('cleaning up container: %s', containerToDelete.id);
+    containerToDelete.remove({force: true}, function(err) {
+      next(err);
+    });
+  } else {
+    setImmediate(next);
+  }
 }
 
 // A Writable Stream that just consumes a stream. Useful for draining readable
