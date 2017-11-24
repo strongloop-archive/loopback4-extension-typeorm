@@ -1,5 +1,5 @@
 {
-  "name": "loopback-typeorm",
+  "name": "loopback4-extension-typeorm",
   "version": "0.0.1",
   "description": "A component to provide TypeORM in Loopback 4",
   "keywords": [
