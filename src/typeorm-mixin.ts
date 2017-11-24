@@ -89,7 +89,7 @@ export function TypeORMMixin(
 
 export interface TypeORMApplication extends Application {
   typeOrmRepository<S>(connection: Connection, ctor: Constructor<S>): Binding;
-  createTypeOrmConnection(options: ConnectionOptions): Connection;
+  createTypeOrmConnection(options: ConnectionOptions | Options): Connection;
   getTypeOrmConnection(name?: string): Connection;
 }
 

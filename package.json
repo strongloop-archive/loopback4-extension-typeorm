@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "description": "A component to provide TypeORM in Loopback 4",
   "keywords": [
-    "loopback-application",
-    "loopback"
+    "loopback",
+    "loopback-extension"
   ],
-  "main": "index.js",
   "engines": {
     "node": ">=8"
   },
@@ -28,7 +27,8 @@
     "test": "npm run build && node ./dist/test/setup.js"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback4-extension-typeorm"
   },
   "author": "",
   "license": "MIT",
@@ -41,7 +41,7 @@
   "dependencies": {
     "@loopback/context": "^4.0.0-alpha.18",
     "@loopback/core": "^4.0.0-alpha.20",
-    "typeorm": "^0.1.2"
+    "typeorm": "^0.1.6"
   },
   "devDependencies": {
     "@loopback/build": "^4.0.0-alpha.5",
