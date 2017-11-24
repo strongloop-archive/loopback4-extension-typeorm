@@ -1,10 +1,11 @@
 # loopback-typeorm
-A component to provide TypeORM in Loopback 4
+A component to provide TypeORM in LoopBack 4
+
+**ALPHA: This is an experimental mixin for LoopBack 4, and is not currently
+supported for any production purpose. Instructions and APIs may change without
+warning.**
 
 ## Usage
-Note: These instructions aren't entirely applicable yet, this module has not
-been published.
-
 1. Install this plugin
 ```ts
 npm install --save loopback-typeorm
