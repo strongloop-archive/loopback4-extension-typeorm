@@ -1,4 +1,4 @@
-# loopback-typeorm
+# loopback4-extension-typeorm
 A component to provide TypeORM in LoopBack 4
 
 **ALPHA: This is an experimental mixin for LoopBack 4, and is not currently
@@ -6,9 +6,9 @@ supported for any production purpose. Instructions and APIs may change without
 warning.**
 
 ## Usage
-1. Install this plugin
+1. Install this plugin and some dependencies
 ```ts
-npm install --save loopback-typeorm
+npm install --save loopback4-extension-typeorm typeorm
 ```
 2. In your application, make your own Application class, but instead of
 extending `Application`, you'll want to call the provided mixin as your base
