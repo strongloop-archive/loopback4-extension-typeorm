@@ -1,9 +1,8 @@
 # loopback4-extension-typeorm
+
 A component to provide TypeORM in LoopBack 4
 
-**ALPHA: This is an experimental mixin for LoopBack 4, and is not currently
-supported for any production purpose. Instructions and APIs may change without
-warning.**
+**DEPRECATED ALPHA: This is an experimental proof of concept showing how to implement a TypeORM mixin for LoopBack 4. The implementation is not currently supported for any production purpose and we are not maintaining this repository any more.**
 
 ## Usage
 1. Install this plugin and some dependencies
